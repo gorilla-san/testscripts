@@ -3,6 +3,7 @@ alert("hello world");
 
 function init() {
     // Process any queued commands
+    console.log("initializing");
     var processQueue = function () {
         var queue = window.myApi.q || [];
         for (var i = 0; i < queue.length; i++) {
