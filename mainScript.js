@@ -1,6 +1,4 @@
 // Assume myApi and its queue (myApi.q) have been initialized in the global scope by the snippet
-alert("hello world");
-
 function init() {
     // Process any queued commands
     console.log("initializing");
