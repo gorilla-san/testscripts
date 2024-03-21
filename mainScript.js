@@ -1,5 +1,7 @@
 // Assume myApi and its queue (myApi.q) have been initialized in the global scope by the snippet
-alert("hello world")(function () {
+alert("hello world");
+
+function init() {
     // Process any queued commands
     var processQueue = function () {
         var queue = window.myApi.q || [];
@@ -20,4 +22,7 @@ alert("hello world")(function () {
 
     // Process any commands that were queued before the script was loaded
     processQueue();
-})();
+}
+
+// Initialize the script
+init();
